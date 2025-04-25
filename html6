@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .text-right {
+            text-align: right;
+        }
+        .header-section {
+            margin-bottom: 20px;
+        }
+        .footer-section {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .shaded-table tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .item-table {
+            margin-top: 30px;
+        }
+        .no-border td {
+            border: none;
+        }
+
+        .highlighted-row {
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        .highlighted {
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <p><strong>BILL TO: (#)</strong></p>
+        <p>Name: </p>
+        <p>Address: </p>
+        <p>City, ST ZIP: </p>
+        <p>Country: </p>
+        <p>Phone: </p>
+    </div>
+
+    <table>
+        <tr>
+            <th>Start Date</th>
+            <th>Finish Date</th>
+            <th>Job Address</th>
+            <th>Client Name</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="shaded-table item-table">
+        <tr>
+            <th>Item ID</th>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Line Total</th>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td colspan="4" class="text-right">SUBTOTAL</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">EXTRAS</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">TOTAL</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">PAID</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="text-right">TOTAL DUE</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="footer-section highlighted-row">
+        <span class="highlighted">THANK YOU FOR YOUR BUSINESS!</span>
+    </div>
+
+</body>
+</html>
