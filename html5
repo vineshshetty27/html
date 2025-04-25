@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Employee Details Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px auto;
+      max-width: 900px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .A1{
+        display: inline-block;
+      width: 10%;
+      margin-right: 2%;
+    }
+    .inline {
+      display: inline-block;
+      width: 22%;
+      margin-right: 2%;
+    }
+
+    .inline-50 {
+      display: inline-block;
+      width: 48%;
+      margin-right: 2%;
+    }
+
+    .inline-33 {
+      display: inline-block;
+      width: 10%;
+      margin-right: 2%;
+    }
+
+    .radio-group {
+      margin-bottom: 10px;
+    }
+
+    .radio-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 60px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .required:after {
+      content: " *";
+      color: red;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #555;
+    }
+
+    hr {
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>New Employee Details Form</h2>
+
+  <form>
+
+    <section>
+      <h3>Personal Details</h3>
+      <div class="A1"> <label>Your name</label></div>
+      <div class="inline-33">
+       
+        <label class="required">Title</label>
+        <select>
+          <option>Mr</option>
+          <option>Mrs</option>
+          <option>Ms</option>
+          <option>Dr</option>
+        </select>
+      </div>
+      <div class="inline-33">
+        <label class="required">First Name</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label>Middle Name</label>
+        <input type="text">
+      </div>
+      <div class="inline">
+        <label class="required">Surname</label>
+        <input type="text">
+      </div>
+
+      <div class="radio-group">
+        <label class="required">Gender:</label>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+      </div>
+
+      <label class="required">Birth Date</label>
+      <input type="date">
+
+      <label class="required">Street Address</label>
+      <input type="text">
+      <label>Street Address Line 2</label>
+      <input type="text">
+
+      <div class="inline-33">
+        <label class="required">Suburb</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">State</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Postcode</label>
+        <input type="text">
+      </div>
+
+      <div class="inline-33">
+        <label class="required">Home Phone</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Mobile Phone</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Email Address</label>
+        <input type="email">
+      </div>
+
+      <div class="radio-group">
+        <label class="required">Are you an Australian?</label>
+        <label><input type="radio" name="australian"> Yes</label>
+        <label><input type="radio" name="australian"> No</label>
+      </div>
+
+      <div class="radio-group">
+        <label class="required">Do you have a working visa?</label>
+        <label><input type="radio" name="visa"> Yes</label>
+        <label><input type="radio" name="visa"> No</label>
+      </div>
+    </section>
+
+    <section>
+      <h3>Employment Details</h3>
+      <label class="required">Job Title</label>
+      <input type="text">
+
+      <label class="required">Commencement Date</label>
+      <input type="date">
+
+      <label class="required">File Tax Number</label>
+      <input type="text">
+
+      <div class="radio-group">
+        <label class="required">Employment Status:</label>
+        <label><input type="radio" name="empstatus"> Full Time</label>
+        <label><input type="radio" name="empstatus"> Part Time</label>
+        <label><input type="radio" name="empstatus"> Temporary</label>
+        <label><input type="radio" name="empstatus"> Casual</label>
+      </div>
+    </section>
+
+    <section>
+      <h3>Emergency Contact Details</h3>
+      <div class="inline-33">
+        <label class="required">Title</label>
+        <select>
+          <option>Mr</option>
+          <option>Mrs</option>
+          <option>Ms</option>
+        </select>
+      </div>
+      <div class="inline-33">
+        <label class="required">First Name</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label>Middle Name</label>
+        <input type="text">
+      </div>
+      <label class="required">Surname</label>
+      <input type="text">
+
+      <label class="required">Relationship</label>
+      <input type="text">
+
+      <div class="inline-33">
+        <label class="required">Home Phone</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Mobile Phone</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Email Address</label>
+        <input type="email">
+      </div>
+    </section>
+
+    <section>
+      <h3>Banking Details</h3>
+      <div class="inline-50">
+        <label class="required">Bank Name</label>
+        <input type="text">
+      </div>
+      <div class="inline-50">
+        <label class="required">Bank Branch</label>
+        <input type="text">
+      </div>
+
+      <div class="inline-33">
+        <label class="required">Account Name</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">Account Number</label>
+        <input type="text">
+      </div>
+      <div class="inline-33">
+        <label class="required">BSB Number</label>
+        <input type="text">
+      </div>
+
+      <label class="required">Employee Signature</label>
+      <textarea></textarea>
+      <input type="text" placeholder="Print your name here">
+      <input type="date" placeholder="Enter date here">
+    </section>
+
+    <button type="submit">Submit</button>
+    <p class="note"><span class="required">*</span> Mandatory fields</p>
+
+  </form>
+
+</body>
+</html>
